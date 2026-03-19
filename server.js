@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 
-// מגיש את כל הקבצים הסטטיים (HTML, CSS, JS)
+// מגיש את כל הקבצים הסטטיים
 app.use(express.static("."));
 
-// מאזין על הפורט של Vercel
+// מאזין לפורט של Vercel
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running...");
 });
